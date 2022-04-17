@@ -10,6 +10,7 @@
     ],
     "type": "flarum-extension",
     "license": "MIT",
+    "version": "1.0.0",
     "support": {
         "issues": "https://github.com/Xelson/flarum-ext-chat/issues",
         "source": "https://github.com/Xelson/flarum-ext-chat",

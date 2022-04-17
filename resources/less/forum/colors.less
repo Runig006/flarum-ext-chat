@@ -1,7 +1,9 @@
-@color-hr: #313946;
-@color-chatlist-hr: #ff649d;
-@color-chatlist-bg: #fde1eb;
+@color-hr:  desaturate(@secondary-color, 20%);
+
+@color-chatlist-hr: desaturate(@secondary-color, 20%);
+@color-chatlist-bg: desaturate(@primary-color, 20%);
+
+@color-chat-selected: @primary-color;
+@color-chat-hovered: saturate(@primary-color, 20%);
 
 @color-message-odd: #f5f7f9;
-@color-chat-selected: #ff4593;
-@color-chat-hovered: #ff94c1;

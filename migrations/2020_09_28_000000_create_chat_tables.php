@@ -17,14 +17,6 @@ return [
 			$table->dateTime('created_at')->nullable();
 		});
 
-		$db = $schema->getConnection();
-		$db->table('neonchat_chats')->insert([
-			'title' => '#main',
-			'color' => '#FF94C1',
-			'icon' => 'fas fa-cloud',
-			'type' => 1
-		]);
-
 		$schema->create('neonchat_chat_user', function (Blueprint $table) {
 			$table->integer('chat_id')->unsigned();
 			$table->integer('user_id')->unsigned();
