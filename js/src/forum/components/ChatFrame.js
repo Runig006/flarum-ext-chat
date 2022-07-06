@@ -53,7 +53,7 @@ export default class ChatFrame extends Component {
 
     componentButtonFixedMaximize() {
         let totalUnreaded = app.chat.getUnreadedTotal();
-        let element = document.querySelector(".MobileTab .item-chat .unread");
+        let element = document.querySelector('.MobileTab .item-chat .unread');
         if (element) {
             element.innerHTML = totalUnreaded;
         }
