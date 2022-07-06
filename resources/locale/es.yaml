@@ -1,78 +1,78 @@
 xelson-chat:
-  foro:
+  forum:
     pusher_not_found: Se necesita Pusher o Websockets para que el chat se actualice en tiempo real.
     index:
       chat_link: Chat
-    barra de herramientas:
+    toolbar:
       title: Chat
       enable_sounds: Habilitar sonidos
       disable_sounds: Desactivar sonidos
       enable_notifications: Habilitar notificaciones
       disable_notifications: Desactivar las notificaciones
-      minimizar: Minimizar
-      maximizar: Maximizar
-      chatear:
-        ajustes: Ajustes del chat
+      minimize: Minimizar
+      maximize: Maximizar
+      chat:
+        settings: Ajustes del chat
     chat:
-      bienvenido:
-        encabezado: ¡Bienvenido a Neon Chat!
-        subtítulo: Por favor, seleccione un chat a la izquierda para la conversación
+      welcome:
+        header: ¡Bienvenido a Neon Chat!
+        subheader: Por favor, seleccione un chat a la izquierda para la conversación
       moder: Moderador
       kick: Patada Kick
-      dejar: Dejar
-      reincorporarse: Rejoin
+      leave: Dejar
+      rejoin: Rejoin
       edit_modal:
         title: Configuración del chat
-        moderador:
-          conseguido: Acabas de obtener derechos de moderador en el chat {nombredelchat}.
+        moderator:
+          got: Acabas de obtener derechos de moderador en el chat {nombredelchat}.
           lost: Acabas de perder tus derechos de Moderador en el chat {chatname}.
-        formulario:
-          título:
+        form:
+          title:
             label: Nombre del chat
             validador: Al menos 1 símbolo
           color:
-            etiqueta: Color
+            label: Color
             validador: En formato hexadecimal
-          icono:
+          icon:
             label: => core.ref.icon
             validador: => core.ref.icon_text
-          usuarios:
+          users:
             edit: Seleccionar y editar usuarios
-          leave (salir): Salir del chat
-          volver: Entrar en el chat
-          eliminar:
-            título: ¿Estás seguro de que quieres borrar este chat?
+          leave: Salir del chat
+          return: Entrar en el chat
+          delete:
+            title: ¿Estás seguro de que quieres borrar este chat?
             desc: Copia y pega el nombre del chat para continuar
-            marcador de posición: Nombre del chat
+            placeholder: Nombre del chat
             botón: Eliminar el chat
-        buscar:
-          marcador de posición: Buscar usuarios
-          falló: No se han encontrado usuarios coincidentes
+        search:
+          placeholder: Buscar usuarios
+          failed: No se han encontrado usuarios coincidentes
           invited: Invitado
         save_button: => core.ref.save_changes
-      lista:
+      list:
         pin: Panel de pines
         unpin: Desenclavar panel
-        marcador de posición: Filtrar Chats
-        vista previa:
-          vacío: No hay mensajes
+        placeholder: Filtrar Chats
+        preview:
+          empty: No hay mensajes
         add_modal:
           title: Seleccionar usuarios
           chat: Chat
           canal: Canal
-          crear:
+          create:
             chat: Crear un nuevo chat
             canal: Crear un nuevo canal
-          alertas:
-            existe: No puedes crear otro MP con este usuario
-          formulario:
-            título:
+          alerts:
+            exists: No puedes crear otro MP con este usuario
+          form:
+            title:
               chat: Nombre del chat
               canal: Nombre del canal
-              validador: Al menos 1 símbolo
+              validator: Al menos 1 símbolo
             icono:
               label: => core.ref.icon
-              validador: => core.ref.icon_text
+              validator: => core.ref.icon_text
             color:
               label: => xelson-chat.forum.chat.edit_modal.form.color.label
               validator: => xelson-chat.forum.chat.edit_modal.form.color.validator
@@ -99,47 +99,47 @@ xelson-chat:
           chat:
             created: "{creatorname} created {chatname} and invited {usernames}"
           pm:
-            creado: "{creatorname} creó el chat con {username}"
+            create: "{creatorname} creó el chat con {username}"
           canal:
-            creado: "{creatorname} creó el canal {chatname}"
-          título:
-            editado: "{editorname} cambió el título del chat de {antiguo} a {nuevo}"
+            create: "{creatorname} creó el canal {chatname}"
+          title:
+            edited: "{editorname} cambió el titulo del chat de {antiguo} a {nuevo}"
           icono:
-            editado: "{editorname} ha cambiado el icono del chat de {antiguo} a {nuevo}"
+            edited: "{editorname} ha cambiado el icono del chat de {antiguo} a {nuevo}"
           color:
-            editado: "{editorname} ha cambiado el color del chat de {antiguo} a {nuevo}"
-          usuarios:
-            invitados: "{editorname} invitó a {usernames}"
-            expulsado: "{editorname} kicked {usernames}"
-            invitado_pateado: "{editorname} invitó a {nombresinvitados} y pateó a {nombrespateados}"
+            edited: "{editorname} ha cambiado el color del chat de {antiguo} a {nuevo}"
+          users:
+            invited: "{editorname} invitó a {usernames}"
+            kicked: "{editorname} kicked {usernames}"
+            invited_kicked: "{editorname} invitó a {nombresinvitados} y pateó a {nombrespateados}"
           self:
-            abandonó: "{nombredeusuario} abandonó el chat"
+            leaved: "{nombredeusuario} abandonó el chat"
             entered: "{nombredeusuario} entró en el chat"
-    errores:
-      no autenticado: Sólo los usuarios registrados pueden utilizar el chat
+    errors:
+      unauthenticated: Sólo los usuarios registrados pueden utilizar el chat
       chatdenied: Tu grupo de usuarios no tiene permiso para escribir mensajes
-      eliminado: Has sido eliminado del chat
+      removed: Has sido eliminado del chat
   admin:
-    permisos:
-      publicar: Publicar mensajes de chat
-      editar: Editar mensajes de chat
-      borrar: Borrar mensajes de chat
-      activar: Habilitar el chat
-      crear:
-        chatear: Iniciar chats
-        canal: Iniciar canales
-      moderar:
-        borrar: Borrar mensajes del chat
+    permissions:
+      post: Publicar mensajes de chat
+      edit: Editar mensajes de chat
+      delete: Borrar mensajes de chat
+      enabled: Habilitar el chat
+      create:
+        chat: Iniciar chats
+        channel: Iniciar canales
+      moderate:
+        delete: Borrar mensajes del chat
         visión: Ver los mensajes borrados
 
-    ajustes:
-      título: Ajustes del chat
+    settings:
+      title: Ajustes del chat
       charlimit: Máximo de caracteres en el mensaje
-      compuerta:
+      floodgate:
         title: Antiflood
-        número: Número de mensajes en una fila
-        tiempo: Durante un periodo
-      visualización:
-        título: Mostrar
-        minimizar: Minimizar inicialmente
-        censurar: Censurar los mensajes para los usuarios no autorizados
+        number: Número de mensajes en una fila
+        time: Durante un periodo
+      display:
+        title: Mostrar
+        minimize: Minimizar inicialmente
+        censor: Censurar los mensajes para los usuarios no autorizados
