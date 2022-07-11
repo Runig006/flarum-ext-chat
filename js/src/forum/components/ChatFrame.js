@@ -53,7 +53,10 @@ export default class ChatFrame extends Component {
 
     componentButtonFixedMaximize() {
         let totalUnreaded = app.chat.getUnreadedTotal();
-
+        let element = document.querySelector('.MobileTab .item-chat .unread');
+        if (element) {
+            element.innerHTML = totalUnreaded;
+        }
         return (
             <div className="button-fixed-maximize" onclick={this.toggleChat.bind(this)}>
                 {totalUnreaded ? <div className="unreaded">{totalUnreaded}</div> : null}
