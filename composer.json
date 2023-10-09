@@ -40,7 +40,7 @@
             "category": "feature",
             "icon": {
                 "image": "icon.svg",
-                "backgroundColor": "#ffaad4",
+                "backgroundColor": "#ff7700",
                 "backgroundSize": "cover",
                 "backgroundPosition": "center"
             }
